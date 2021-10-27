@@ -10,7 +10,6 @@
 #
 """数值反转"""
 
-
 # start = int(input("请输入一个数值："))
 # result = 0
 # while start > 0:
@@ -66,7 +65,28 @@
 #         else:
 #             need_to_go = True
 # print("你输光了所有的钱！")
-x = int(input())
-a = 1
-b = 1
-while n <= x:
+# x = int(input())
+# n = 0
+# a = 1
+# b = 1
+# print(a, " ")
+# print(b, " ")
+# while n <= x:
+#     c = a + b
+#     print(c, " ")
+#     a = b
+#     b = c
+#     n += 1
+# 完美数
+# x = 0
+# result = []
+# for i in range (1,10000):
+#     for j in range(1, i-1):
+#         if i%j==0:
+#             x+=j
+#     if i==x:
+#         result.append(i)
+#     x = 0
+# print(result)
+
+
