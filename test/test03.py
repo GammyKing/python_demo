@@ -10,6 +10,7 @@
 #
 """数值反转"""
 
+
 # start = int(input("请输入一个数值："))
 # result = 0
 # while start > 0:
@@ -88,5 +89,19 @@
 #         result.append(i)
 #     x = 0
 # print(result)
+# 100以内的素数
+def all_prime(num):
+    lst = []
+    if num <= 1:
+        return '0 ~ %d以内没有任何素数' % num
+    for i in range(2, num + 1):
+        for j in range(2, int(i / 2) + 1):
+            if not i % j:
+                break
+        else:
+            lst.append(i)
+    return lst
 
+
+print(all_prime(100))
 
