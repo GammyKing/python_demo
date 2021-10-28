@@ -94,8 +94,8 @@ def all_prime(num):
     lst = []
     if num <= 1:
         return '0 ~ %d以内没有任何素数' % num
-    for i in range(2, num + 1):
-        for j in range(2, int(i / 2) + 1):
+    for i in range(2, num + 1):  # 选择从2到num的数值
+        for j in range(2, int(i / 2) + 1):  #
             if not i % j:
                 break
         else:
@@ -104,4 +104,3 @@ def all_prime(num):
 
 
 print(all_prime(100))
-
