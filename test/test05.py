@@ -280,6 +280,28 @@
 #
 #
 # print(get_suffix('httlo.nihso', True))
-n = 0
-def find_max_min(x):
-    x[n] =
+
+# 返回数列里最大和第二大的数值。
+# def find_max_min(x):
+#     m1, m2 = (x[0], x[1]) if x[0] > x[1] else (x[1], x[0])
+#     for index in range(2, len(x)):
+#         if x[index] > m1:
+#             m2 = m1
+#             m1 = x[index]
+#         elif x[index] > m2:
+#             m2 = x[index]
+#     return m1, m2
+#
+#
+# print(find_max_min([1, 2, 3, 67, 90]))
+
+# import time
+#
+# scale = 10
+# print("----------start-------------")
+# for i in range(scale + 1):
+#     a, b = '**' * i, '...' * (scale - i)
+#     c = (i / scale) * 100
+#     print("%{:^3.0f}[{}->{}]".format(c, a, b))
+#     time.sleep(0.1)
+# print("-------------end----------------")
