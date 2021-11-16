@@ -280,6 +280,64 @@
 #
 #
 # print(get_suffix('httlo.nihso', True))
-n = 0
-def find_max_min(x):
-    x[n] =
+
+
+# # 设计验证码，验证码由大小写字母与数字构成。
+# import random
+#
+# need_code = int(input("请输入需要的验证码长度："))
+#
+#
+# def validate_code(num):
+#     content = '0123456789abcdefghijklmnopqsrtuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+#     flag = num
+#     result = ''
+#     while True:
+#         index = random.randint(0, len(content)-1)
+#         result += content[index]
+#         flag -= 1
+#         if flag == 0:
+#             break
+#     return result
+#
+#
+# print(validate_code(need_code))
+
+
+# 设计一个函数返回给定文件名的后缀名
+# filename = input("请输入文件名：")
+# node_save = input("是否保留小数点：(Y/N)")
+#
+#
+# def get_suffix(f, n):
+#     result = ''
+#     if '.' in f:
+#         index = f.rfind('.')
+#         if n == 'y' or n == 'Y':
+#             result = f[index:]
+#         else:
+#             result = f[index + 1:]
+#     else:
+#         print('请输入完整的文件名：')
+#     return result
+#
+#
+# print(get_suffix(filename, node_save))
+
+# 设计一个函数返回传入的列表中的最大和第二大元素的值
+# def max(x):
+#     m1, m2 = (x[0], x[1]) if x[0] > x[1] else (x[1], x[0])
+#     for index in range(2, len(x)):
+#         if x[index] > m1:
+#             m2 = m1
+#             m1 = x[index]
+#         elif x[index] > m2:
+#             m2 = x[index]
+#     return m1, m2
+#
+#
+# n = [1, 23, 4, 5, 67, 0]
+# print(max(n))
+
+
+
