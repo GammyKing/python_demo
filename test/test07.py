@@ -276,3 +276,102 @@
 #
 # if __name__ == '__main__':
 #     main()
+
+# 工资结算系统
+# from abc import ABCMeta, abstractmethod
+#
+#
+# class Employee(object, metaclass=ABCMeta):
+#     """员工"""
+#
+#     def __init__(self, name):
+#         """
+#         初始化方法
+#         :param name: 姓名
+#         """
+#         self._name = name
+#
+#     @property
+#     def name(self):
+#         return self._name
+#
+#     @abstractmethod
+#     def get_salary(self):
+#         """
+#         获得薪水
+#         :return: 月薪
+#         """
+#         pass
+#
+#
+# class Manager(Employee):
+#     """
+#     部门经理
+#     """
+#
+#     def get_salary(self):
+#         return 15000.0
+#
+#
+# class Programmer(Employee):
+#     """程序员"""
+#
+#     def __init__(self, name, working_hour=0):
+#         super().__init__(name)
+#         self._working_hour = working_hour
+#
+#     @property
+#     def working_hour(self):
+#         return self._working_hour
+#
+#     @working_hour.setter
+#     def working_hour(self, working_hour):
+#         self._working_hour = working_hour if working_hour > 0 else 0
+#
+#     def get_salary(self):
+#         return 150.0 * self._working_hour
+#
+#
+# class Saleman(Employee):
+#     """销售员"""
+#
+#     # 定义销售量
+#     def __init__(self, name, sale_mount=0):
+#         super().__init__(name)
+#         self._sale_mount = sale_mount
+#
+#     @property
+#     def sale_mount(self):
+#         return self._sale_mount
+#
+#     @sale_mount.setter
+#     def sale_mount(self, sale_mount):
+#         self._sale_mount = sale_mount if sale_mount > 0 else 0
+#
+#     def get_salary(self):
+#         return 1200 + 0.05 * self._sale_mount
+#
+#
+# def main():
+#     # python中的集中数据结构的清算：
+#     # () 表示：元组数据
+#     # [] 表示：list列表数据类型
+#     # {} 表示：字典类型
+#     emps = [
+#         Manager('john'), Programmer('jack'),
+#         Manager('tom'), Saleman('mas'),
+#         Saleman('jjj'), Programmer('ttt'),
+#         Programmer('dd')
+#     ]
+#     # 用列表的形式将数据装进去，用is_instance来判断对象类型
+#     for emp in emps:
+#         if isinstance(emp, Programmer):
+#             emp.working_hour = int(input('请输入%s本月工作时长：' % emp.name))
+#         elif isinstance(emp, Saleman):
+#             emp.sale_mount = float(input('请输入%s本月销售量：' % emp.name))
+#         print('%s本月工资为：￥%s元' %
+#               (emp.name, emp.get_salary()))
+#
+#
+# if __name__ == '__main__':
+#     main()
